@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+.button-green {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 137px;
+  height: 55px;
+  border: none;
+  cursor: pointer;
+  background: #3DB46D;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+
+  /* text */
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.button-tomato {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 137px;
+  height: 55px;
+  border: none;
+  cursor: pointer;
+  background: #EB5757;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+
+  /* text */
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.button-transparent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 137px;
+  height: 55px;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 12px;
+
+  /* text */
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #BDBDBD;
+}
+
+.button-transparent:hover {
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.galery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 45px;
+}
+
+
+.image-wrapper{
+  position: relative;
+  cursor: pointer;
+}
+
+.image-wrapper:hover > .label-image , .image-wrapper:hover > .button-delete-transparent {
+  display: block;
+}
+
+.image-wrapper:hover {
+  filter: brightness(.9);
+}
+
+.image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.label-image {
+  display: none;
+  position: absolute;
+  left: 18px;
+  bottom: 0px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #FFFFFF;
+}
+
+.button-delete-transparent {
+  display: none;
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  width: 63px;
+  height: 23px;
+  border: 1px solid #EB5757;
+  border-radius: 38px;
+  background-color: #EB5757;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: lowercase;
+
+  color: #FFF;
+
+  cursor: pointer;
+
+}
+
+
+
+
+
+
